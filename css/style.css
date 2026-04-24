@@ -1,0 +1,68 @@
+/*   
+ /* 1. Reset and Background Setup */
+body {
+    margin: auto;
+    padding: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevents side-scrolling */
+    background-color: #000; /* Fallback color while video loads */
+}
+
+/* 2. The Video Background - Fixed to cover the whole screen */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;    /* 100% of the viewport width */
+    height: 100vh;   /* 100% of the viewport height */
+    object-fit: cover; /* This REMOVES the black bars by filling the screen */
+    z-index: -1;     /* Keeps it behind your text */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* 1. The Transparent Blue Tint (Adjust the 0.6 to change intensity) */
+    background-color: rgba(176, 212, 238, 0.6); /* This is the light blue from your image */
+    
+    /* 2. Glassmorphism effect to make text super easy to read */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); /* Required for Safari */
+
+    /* 3. A subtle edge highlights the clear material */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* 4. Rest of your layout styles */
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: #000; /* Dark text looks best on this blue tint */
+}
+
+/* Ensure headings are visible */
+h1, h3 {
+    color: #333;
+    margin-top: 0;
+}
+/* Adjust heading color to be visible on the new background */
+h1, h3 {
+    color: #ffffff;
+}
+
+/* 4. Element Styling */
+h1 { 
+    color: #333; 
+}
+
+img, .main-container video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+} */
